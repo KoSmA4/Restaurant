@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css" th:href="@{/css/style.css}" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__icon">
+            <img
+              src="rest__icon.png"
+              alt="rest__icon"
+              th:src="@{/images/rest__icon.png}"
+            />
+          </div>
+          <div class="header__menu">
+            <div class="header__element">
+<!--              <img-->
+<!--                src="menu__icon.png"-->
+<!--                alt=""-->
+<!--                th:src="@{/images/menu__icon.png}"-->
+<!--              />-->
+              <a href="/book">Бронь столика</a>
+
+            </div>
+
+            <div class="header__element">
+<!--              <img src="comment.png" alt="" th:src="@{/images/comment.png}" />-->
+              <a href="/index_message"
+              >Оставить отзыв</a>
+            </div>
+            <div class="header__element"><a href="/authorization">Войти</a></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__header">Новинки</div>
+        <!-- Новые блюда в меню -->
+        <div class="main__new--dishes">
+          <div class="main__new--dish">
+            <div class="main__icon">
+              <img
+                src="brusketta.jpg"
+                alt=""
+                th:src="@{/images/brusketta.jpg}"
+              />
+            </div>
+            <div class="main__name">Брускетта</div>
+            <div class="main__price">360 ₽</div>
+          </div>
+          <div class="main__new--dish">
+            <div class="main__icon">
+              <img src="lazania.jpg" alt="" th:src="@{/images/lazania.jpg}" />
+            </div>
+            <div class="main__name">Лазанья</div>
+            <div class="main__price">430 ₽</div>
+          </div>
+          <div class="main__new--dish">
+            <div class="main__icon">
+              <img src="rizotto.jpg" alt="" th:src="@{/images/rizotto.jpg}" />
+            </div>
+            <div class="main__name">Ризотто</div>
+            <div class="main__price">390 ₽</div>
+          </div>
+          <div class="main__new--dish">
+            <div class="main__icon">
+              <img src="paelia.jpg" alt="" th:src="@{/images/paelia.jpg}" />
+            </div>
+            <div class="main__name">Паэлья</div>
+            <div class="main__price">420 ₽</div>
+          </div>
+        </div>
+        <div class="main__header">Меню</div>
+
+        <!-- Разные кухни в меню -->
+        <div class="main__cuisines">
+          <div class="main__cuisine"><a href="/">Пасты</a></div>
+          <div class="main__cuisine"><a href="/pizza">Пиццы</a></div>
+          <div class="main__cuisine"><a href="/salad">Салаты</a></div>
+          <div class="main__cuisine"><a href="/drinks">Напитки</a></div>
+        </div>
+        <!-- Позиции в меню -->
+        <div class="main__menu">
+          <div class="main__position">
+            <div class="main__image">
+              <img src="pasta1.jpg " alt="" th:src="@{/images/pasta1.jpg}" />
+            </div>
+            <div class="main__h">Паста с томатами</div>
+            <div class="main__text">
+              Спагетти с томатами, соусом и базиликом.
+            </div>
+            <div class="main__button">340 ₽</div>
+          </div>
+          <div class="main__position">
+            <div class="main__image">
+              <img src="pasta2.jpg" alt="" th:src="@{/images/pasta2.jpg}" />
+            </div>
+            <div class="main__h">Паста карбонара</div>
+            <div class="main__text">
+              Паста со сливками, беконом и сыром пармезан
+            </div>
+            <div class="main__button">410 ₽</div>
+          </div>
+          <div class="main__position">
+            <div class="main__image">
+              <img src="pasta3.jpg" alt="" th:src="@{/images/pasta3.jpg}" />
+            </div>
+            <div class="main__h">Паста с креветками</div>
+            <div class="main__text">
+              Паста с креветками, сливками, томатами и сыром пармезан
+            </div>
+            <div class="main__button">540 ₽</div>
+          </div>
+          <div class="main__position">
+            <div class="main__image">
+              <img src="pasta4.jpg" alt="" th:src="@{/images/pasta4.jpg}" />
+            </div>
+            <div class="main__h">Паста болоньезе</div>
+            <div class="main__text">Паста с фаршом, соусом и томатамми</div>
+            <div class="main__button">390 ₽</div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__author"></div>
+      </footer>
+    </div>
+  </body>
+</html>

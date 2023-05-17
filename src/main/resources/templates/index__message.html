@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>message</title>
+    <link rel="stylesheet" href="index__message.css" th:href="@{/css/index__message.css}" />
+  </head>
+  <body>
+    <div class="wrapper">
+<!--      <form method="post" action="/pizza" th:object="${registerRequest}" class="form">-->
+<!--        <p>Отправьте нам вашу обратную связь!</p>-->
+<!--        <input type="text" class="text" placeholder="Введите ваше имя" />-->
+<!--        <input type="text" class="text" placeholder="Введите ваш email" />-->
+<!--        <input type="text" class="text" placeholder="Введите ваш отзыв" />-->
+<!--        <input type="radio" name="star" class="mark" /> 1 star <br />-->
+<!--        <input type="radio" name="star" class="mark" /> 2 star<br />-->
+<!--        <input type="radio" name="star" class="mark" /> 3 star <br />-->
+<!--        <input type="radio" name="star" class="mark" /> 4 star <br />-->
+<!--        <input type="radio" name="star" class="mark" /> 5 star-->
+<!--        <button type="submit">Отправить</button>-->
+<!--      </form>-->
+
+      <form method="post" th:object="${registerRequest}" class="form">
+        <input type="text" name="name" class="text" placeholder="Имя" required>
+        <input type="email" name="email" class="text" placeholder="E-mail" required>
+        <input type="text" name="feedback" class="text" placeholder="Отзыв" required>
+        <div class="container">
+          <input type="radio" id="1 Star" name="rate" class="mark" value="1 Star">
+          <label for="1 Star">1 Star</label>
+          <input type="radio" id="2 Stars" name="rate" class="mark" value="2 Stars">
+          <label for="2 Stars">2 Stars</label>
+          <input type="radio" id="3 Stars" name="rate" class="mark" value="3 Stars">
+          <label for="3 Stars">3 Stars</label>
+          <input type="radio" id="4 Stars" name="rate" class="mark" value="4 Stars">
+          <label for="4 Stars">4 Stars</label>
+          <input type="radio" id="5 Stars" name="rate" class="mark" value="5 Stars">
+          <label for="5 Stars">5 Stars</label>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 0 15px 0;
+}
+.table {
+  height: 600px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 30px;
+}
+.table__number {
+  display: grid;
+}
+.table__number-current {
+  border-width: 0.5px 1px 0.5px 1.5px;
+  border-style: solid solid solid solid;
+  border-color: #6a6a6a #6a6a6a #6a6a6a #6a6a6a;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.table__number-current:nth-child(even) {
+  background-color: #e7e7e7;
+  /* border: 1px solid black; */
+}
+.table__availability {
+  display: grid;
+  text-align: center;
+}
+.table__availability-current {
+  border-width: 0.5px 1px 0.5px 1.5px;
+  border-style: solid solid solid solid;
+  border-color: #6a6a6a #6a6a6a #6a6a6a #6a6a6a;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.table__availability-current:nth-child(even) {
+  background-color: #e7e7e7;
+  /* border: 1px solid black; */
+}
+.table__action {
+  display: grid;
+  text-align: center;
+}
+.table__action-current {
+  border-width: 0.5px 1px 0.5px 1.5px;
+  border-style: solid solid solid solid;
+  border-color: #6a6a6a #6a6a6a #6a6a6a #6a6a6a;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.table__action-current:nth-child(even) {
+  background-color: #e7e7e7;
+  /* border: 1px solid black; */
+}
+a {
+  color: black;
+  display: block;
+  border: 1px solid #3d3d3d;
+
+  border-radius: 10px;
+}

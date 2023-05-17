@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salad</title>
+    <link rel="stylesheet" href="style.css" th:href="@{/css/style.css}" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__icon">
+            <img
+              src="rest__icon.png"
+              alt="rest__icon"
+              th:src="@{/images/rest__icon.png}"
+            />
+          </div>
+          <div class="header__menu">
+            <div class="header__element">
+              <!--              <img-->
+              <!--                src="menu__icon.png"-->
+              <!--                alt=""-->
+              <!--                th:src="@{/images/menu__icon.png}"-->
+              <!--              />-->
+              <a href="/book">Бронь столика</a>
+
+            </div>
+            <div class="header__element">
+<!--              <img src="comment.png" alt="" th:src="@{/images/comment.png}" />-->
+              <a href="/message"
+              ></a>
+              Оставить отзыв
+            </div>
+            <div class="header__element"><a href="/authorization">Войти</a></div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__header">Новинки</div>
+        <!-- Новые блюда в меню -->
+        <div class="main__new--dishes">
+          <div class="main__new--dish">
+            <div class="main__icon">
+              <img
+                src="brusketta.jpg"
+                alt=""
+                th:src="@{/images/brusketta.jpg}"
+              />
+            </div>
+            <div class="main__name">Брускетта</div>
+            <div class="main__price">360 ₽</div>
+          </div>
+          <div class="main__new--dish">
+            <div class="main__icon">
+              <img src="lazania.jpg" alt="" th:src="@{/images/lazania.jpg}" />
+            </div>
+            <div class="main__name">Лазанья</div>
+            <div class="main__price">430 ₽</div>
+          </div>
+          <div class="main__new--dish">
+            <div class="main__icon">
+              <img src="rizotto.jpg" alt="" th:src="@{/images/rizotto.jpg}" />
+            </div>
+            <div class="main__name">Ризотто</div>
+            <div class="main__price">390 ₽</div>
+          </div>
+          <div class="main__new--dish">
+            <div class="main__icon">
+              <img src="paelia.jpg" alt="" th:src="@{/images/paelia.jpg}" />
+            </div>
+            <div class="main__name">Паэлья</div>
+            <div class="main__price">420 ₽</div>
+          </div>
+        </div>
+        <div class="main__header">Меню</div>
+
+        <!-- Разные кухни в меню -->
+        <div class="main__cuisines">
+          <div class="main__cuisine"><a href="/restaurant">Пасты</a></div>
+          <div class="main__cuisine"><a href="/pizza">Пиццы</a></div>
+          <div class="main__cuisine"><a href="/">Салаты</a></div>
+          <div class="main__cuisine"><a href="/drinks">Напитки</a></div>
+        </div>
+        <!-- Позиции в меню -->
+        <div class="main__menu">
+          <div class="main__position">
+            <div class="main__image">
+              <img src="salad1.jpg" alt="" th:src="@{/images/salad1.jpg}" />
+            </div>
+            <div class="main__h">Салат капрезе</div>
+            <div class="main__text">
+              Лёгкий салат с томатами, мацареллой и базиликом.
+            </div>
+            <div class="main__button">380 ₽</div>
+          </div>
+          <div class="main__position">
+            <div class="main__image">
+              <img src="salad2.jpg" alt="" th:src="@{/images/salad2.jpg}" />
+            </div>
+            <div class="main__h">Салат с вялеными помидорами</div>
+            <div class="main__text">
+              Салат с сыром фета, вяленными помидорами, маслинами и зеленью.
+            </div>
+            <div class="main__button">330 ₽</div>
+          </div>
+          <div class="main__position">
+            <div class="main__image">
+              <img src="salad3.jpg" alt="" th:src="@{/images/salad3.jpg}" />
+            </div>
+            <div class="main__h">Салат с прошутто</div>
+            <div class="main__text">
+              Салат с прошутто, хурмой и трюфельным сыром.
+            </div>
+            <div class="main__button">500 ₽</div>
+          </div>
+          <div class="main__position">
+            <div class="main__image">
+              <img src="salad4.jpg" alt="" th:src="@{/images/salad4.jpg}" />
+            </div>
+            <div class="main__h">Салат с кукурузой</div>
+            <div class="main__text">
+              Салат с кукурузой, оливками, огурцами и греческим соусом.
+            </div>
+            <div class="main__button">580 ₽</div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__author"></div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <link rel="stylesheet" href="table__auto.css" th:href="@{/css/table__auto.css}" />
+  </head>
+  <body>
+
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  list-style: none;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d0d0d0;
+}
+.form {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+  box-shadow: 0 0 5px #000000;
+  height: 200px;
+}
+p {
+  text-align: center;
+  font-size: 26px;
+  padding-bottom: 10px;
+}
+.text {
+  border: none;
+  height: 30px;
+  width: 450px;
+  display: block;
+  font-size: 24px;
+  border: 1px solid #1a1a1a;
+  padding: 3px;
+  margin-bottom: 5px;
+  background-color: #b8b8b8;
+  border-radius: 3px;
+}
+
+::placeholder {
+  color: rgb(0, 0, 0);
+  opacity: 0.7;
+}
+.mark {
+  /* display: block; */
+  text-align: center;
+  background-color: #ffffff;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  height: 40px;
+  width: 180px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  font-size: 20px;
+  background-color: #b8b8b8;
+  cursor: pointer;
+}
+button:active {
+  height: 37px;
+  width: 175px;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #000000;
+}
+.table{
+
+  text-align: center;
+  font-size: 40px;
+  background-color: #d0d0d0;
+}
+  </style>
+
+  <h2 class="table">Столик №<span th:text="${stolik}"></span></h2>
+  <div class="wrapper">
+  <form action="#" method="post" th:object="${booking}" class="form">
+    <label for="name">Имя:</label>
+    <input class="text" type="text" id="name" name="name" required/>
+    <br/>
+    <label for="phone">Телефон:</label>
+    <input class="text" type="tel" id="phone" name="phone" required/>
+    <br/>
+    <button type="submit">Забронировать</button>
+  </form>
+  </div>
+
+
+  </body>
+</html>
